@@ -1,81 +1,133 @@
+.space-zero(){
+    margin: 0;
+    padding: 0;
+}
+
+@background-color-grey01: #f7f7f3;
+@background-color-grey02: #eaeaea;
+@background-color-grey03: #e9eae2;
+@background-color-grey035: #e5e9df;
+@background-color-grey04: #dfe0d9;
+@background-color-grey05: #cecece;
+@background-color-grey06: #647581;
+@background-color-green01: #d4edbf;
+@background-color-green02: #7acec3;
+@background-color-orange01: #ebb240;
+@background-color-orange02: #ff9b6d;
+@background-color-white: #fff;
+
 body{
-  margin: 0;
-  padding: 0;
+  .space-zero();
+  color: #cecece;
 
 }
 .layout-center-wrapper {
+   .space-zero();
     max-width: 1500px;
     margin: 0 auto;
 }
-
-.dsgn-header{
+.row{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     outline: 1px dotted orange;
-}
-.dsgn-logo{
-    width: 70%;
-    background-color:  #e9eae2;
-    outline: 1px dotted green;
-}
-.head-nav{
-    width: 30%;
-    background-color:  #7acec3;
-    outline: 1px dotted blue;
-}
-.projects-items1{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    outline: 1px dotted orange;
-
-}
-.projects-items1-leftcol{
-    width: 70%;
-    outline: 1px dotted green;
-}
-.projects-blocks-left{
+    &--wrap{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    outline: 1px dotted orange;
-}
-.projects__main{
-    width: 45%;
-    background-color:  #ebb240;
-    outline: 1px dotted blue;
-}
-.projects__fondue{
-    width: 55%;
-    background-color:  #fff;
-    outline: 1px dotted blue;
-}
-.projects__louis{
-    width: 30%;
-    background-color:  #667681;
-    outline: 1px dotted red;
-}
-.projects__tel{
-    width: 70%;
-    background-color:  #eaeaea;
-    outline: 1px dotted red;
-}
-.projects-items1-rightcol{
-    width: 30%;
-    outline: 1px dotted green;
-
-}
-.projects-blocks-right{
-  display: flex;
-    flex-direction: column;
+    }
+    &--vertical{
+    display: flex;
+    flex-direction:column;
     justify-content: flex-start;
-    outline: 1px dotted orange;
-}
-.projects__potter{
-    width: 100%;
-  color: #dfe0d9;
-}
+    }
+    &__column{
+      &--wide{
+        width: 70%;
+        outline: 1px dotted green;
+      }
+      &--small{
+        width: 30%;
+        outline: 1px dotted blue;
+      }
+      &--halfpage{
+         width: 50%;
+        outline: 1px dotted brown;
+      }
+      &--design{
+      background-color: @background-color-grey03;
+      }
+      &--menu{
+      background-color: @background-color-green02;
+      }
+      &--projects{
+      width:  45%;
+      background-color: @background-color-orange01;
+      }
+      &--fondue{
+      width:  55%;
+      background-color: @background-color-white;
+      }
+      &--louis{
+      width:  30%;
+      background-color: @background-color-grey06;
+      }
+      &--code{
+      width:  70%;
+      background-color: @background-color-grey02;
+      }
+      &--potter{
+      width:  100%;
+      background-color: @background-color-grey04;
+      }
+      &--tabano{
+      width:  100%;
+      background-color: @background-color-grey01;
+      }
+      &--fiji{
+      width:  100%;
+      background-color: @background-color-white;
+      }
+      &--sesann{
+      width:  70%;
+      background-color: @background-color-white;
+      }
+      &--alessi{
+      width:  30%;
+      background-color: @background-color-grey05;
+      }
+      &--timeline{
+      background-color: @background-color-orange01;
+      }
+      &--studio{
+      background-color: @background-color-orange02;
+      }
+      &--awards{
+      width:  50%;
+      background-color: @background-color-grey03;
+      }
+      &--staff{
+      width:  100%;
+      background-color: @background-color-grey03;
+      }
+      &--staff-small{
+      width:  100%;
+      }
+      &--news{
+      width:  100%;
+      background-color: @background-color-green01;
+      }
+      &--newitem{
+      width:  50%;
+      background-color: @background-color-grey035;
+      }
+      &--contacts{
+      background-color: @background-color-grey03;
+      }
+    }
+  }
+
+
 
 
