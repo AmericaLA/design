@@ -31,11 +31,13 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     outline: 1px dotted orange;
+   justify-content: space-between;
     &--wrap{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+
     }
     &--vertical{
     display: flex;
@@ -56,77 +58,276 @@ body{
         outline: 1px dotted brown;
       }
       &--design{
-      background-color: @background-color-grey03;
+        box-sizing: border-box;
+        padding-left: 8%;
+        padding-top: 50px;
+        background: url("../img/pic-design-chair.png") no-repeat 70% 0;
+        min-height: 500px;
+        background-size: auto 100%;
+        background-color: @background-color-grey03;
       }
       &--menu{
-      background-color: @background-color-green02;
+      position: relative;
+      min-height: 500px;
+      background: @background-color-green02 url('../img/line.svg') no-repeat 0 0;
+      background-size: 100% 100%;
       }
       &--projects{
-      width:  45%;
-      background-color: @background-color-orange01;
+      position: relative;
+      width:  43%;
+      background: @background-color-orange01 url('../img/line.svg') no-repeat 0 0;
+      background-size: 100% 100%;
       }
       &--fondue{
-      width:  55%;
+      position: relative;
+      width:  57%;
+      background: url("../img/pic-fondue-lamp.png") no-repeat 0 50%;
+      min-height: 500px;
+      background-size: auto 100%;
       background-color: @background-color-white;
       }
       &--louis{
+      position: relative;
       width:  30%;
+      background: url("../img/pic-louis-chair.png") no-repeat 0 50%;
+      min-height: 465px;
+      background-size: auto 100%;
       background-color: @background-color-grey06;
       }
       &--code{
+      position: relative;
       width:  70%;
+      background: url("../img/pic-code-chair.png") no-repeat 0 50%;
+      min-height: 465px;
+      background-size: auto 100%;
       background-color: @background-color-grey02;
       }
       &--potter{
+      position: relative;
       width:  100%;
+      background: url("../img/pic-potter-teapot.png") no-repeat 50% 50%;
+      min-height: 250px;
+      background-size: auto 100%;
       background-color: @background-color-grey04;
       }
       &--tabano{
+      position: relative;
       width:  100%;
+      background: url("../img/pic-tabano-chair.png") no-repeat 0 50%;
+      min-height: 465px;
+      background-size: auto 100%;
       background-color: @background-color-grey01;
       }
       &--fiji{
+      position: relative;
       width:  100%;
+      background: url("../img/pic-fiji-chair.png") no-repeat  0 50%;
+      min-height: 250px;
+      background-size: auto 100%;
       background-color: @background-color-white;
       }
       &--sesann{
+      position: relative;
       width:  70%;
+      background: url("../img/pic-sesann-chair.png") no-repeat 50% 50%;
+      min-height: 300px;
+      background-size: auto 100%;
       background-color: @background-color-white;
       }
       &--alessi{
+      position: relative;
       width:  30%;
+      background: url("../img/pic-alessi-thing.png") no-repeat 50% 50%;
+      min-height: 300px;
+      background-size: auto 100%;
       background-color: @background-color-grey05;
       }
       &--timeline{
-      background-color: @background-color-orange01;
+      position: relative;
+      background: @background-color-orange01 url('../img/line.svg') no-repeat 0 0;
+      background-size: 70% 100%;
       }
       &--studio{
-      background-color: @background-color-orange02;
+      position: relative;
+      background: @background-color-orange02 url('../img/line.svg') no-repeat 0 0;
+      background-size: 100% 100%;
+
       }
       &--awards{
-      width:  50%;
+      box-sizing: border-box;
+      padding-top: 90px;
+      padding-bottom: 60px;
+      padding-left: 7%;
+      padding-right: 11%;
       background-color: @background-color-grey03;
       }
+      &--half{
+        box-sizing: border-box;
+        width:  45%;
+        margin-left: 5%;
+      }
       &--staff{
-      width:  100%;
+      box-sizing: border-box;
+      padding-top: 60px;
+      padding-bottom: 90px;
+      padding-left: 11%;
+      padding-right: 2%;
+      background-color: @background-color-grey03;
+      }
+      &--staff-big{
+      box-sizing: border-box;
+      padding-top: 60px;
+      padding-bottom: 90px;
+      padding-right: 11%;
       background-color: @background-color-grey03;
       }
       &--staff-small{
       width:  100%;
       }
       &--news{
-      width:  100%;
-      background-color: @background-color-green01;
+      position: relative;
+      background: @background-color-green01 url('../img/line.svg') no-repeat 0 0;
+      background-size: 100% 100%;
       }
-      &--newitem{
-      width:  50%;
+      &--news-big{
+      box-sizing: border-box;
       background-color: @background-color-grey035;
+      padding-left: 7%;
+      padding-right: 11%;
+      padding-top: 60px;
+      padding-bottom: 90px;
       }
       &--contacts{
       background-color: @background-color-grey03;
       }
+      &--staff-small{
+      width: 26%;
+      }
+      &--footer{
+      position: relative;
+      }
+      &--contactdetails-footer{
+      position: absolute;
+      bottom: 380px;
+      left: 7%;
+      }
+      &--design-footer{
+      position: absolute;
+      top: 150px;
+      right: 22%;
+      }
+    }
+   &__items{
+     p{
+       .space-zero();
+     }
+   }
+  &__text{
+    &--address-header{
+      padding-top: 55%;
+      padding-left:11%;
+    }
+    &--contacts-header{
+      padding-top: 8%;
+      padding-left:28%;
     }
   }
+    &__title{
+      &--big{
+        position: absolute;
+        top: 300px;
+        left: 215px;
+        font-size: 48px;
+        line-height: 14px;
+        text-transform: uppercase;
+      }
+    }
+}
+.project{
+  &__position{
+    &--list{
+      position: absolute;
+      width: 220px;
+      top: 21%;
+      left: 21%;
+    }
+    &--project{
+      position: absolute;
+      top: 14%;
+      left: 14%;
+    }
+    &--fondue{
+      position: absolute;
+      width: 220px;
+      top: 21%;
+      left: 21%;
+    }
+    &--louis{
+      width: 140px;
+      padding-top: 11%;
+      padding-left: 10%;
+    }
+    &--code{
+      width: 315px;
+      padding-top: 12%;
+      padding-left: 50%;
+    }
+    &--potter{
+      width: 160px;
+      padding-top:  7%;
+      padding-left: 7%;
+    }
+    &--tabano{
+      width: 365px;
+      padding-top: 82%;
+      padding-left: 7%;
+    }
+    &--fiji{
+      width: 150px;
+      padding-top: 12%;
+      padding-left: 60%;
+    }
+     &--sesann{
+      width: 430px;
+      padding-top: 27%;
+      padding-left: 20%;
+    }
+      &--alessi{
+      width: 155px;
+      padding-top: 26%;
+      padding-left: 50%;
+    }
+      &--timeline{
+      width: 90px;
+      padding-top: 16%;
+      padding-left: 16%;
+    }
+  }
+}
+.logo{
+  max-width: 165px;
+}
+img{
+    max-width: 100%;
+  }
+.head-nav--menu{
+ display: none;
+}
+.row-list{
+   .space-zero();
+  &__item{
+   .space-zero();
+    list-style: none;
+  }
+}
+
+.awards-photo{
+  background: url("../img/pic-awards.png") no-repeat 0 0;
+  min-height: 200px;
+}
+.map{
+  background-size: cover;
+}
 
 
 
